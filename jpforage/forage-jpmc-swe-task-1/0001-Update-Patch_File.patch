@@ -1,0 +1,27 @@
+From c4aa9191e50cf9314fa7a409aa7ae34e9cb4ab88 Mon Sep 17 00:00:00 2001
+From: aanchal-to <84403562+aanchal-to@users.noreply.github.com>
+Date: Thu, 18 May 2023 17:03:42 +0530
+Subject: [PATCH] Update Patch_File
+
+---
+ Patch_File | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/Patch_File b/Patch_File
+index 2cac204..847a73c 100644
+--- a/Patch_File
++++ b/Patch_File
+@@ -11,10 +11,8 @@ Subject: Created a Patch File
+  	stock = quote['stock']
+  	bid_price = float(quote['top_bid']['price'])
+  	ask_price = float(quote['top_ask']['price'])
+-  '''ruby
+ -	price = bid_price
+ +	price = (bid_price + ask_price)/2
+-'''
+  	return stock, bid_price, ask_price, price
+  
+  def getRatio(price_a, price_b):
+-- 
+2.40.0.windows.1
+
